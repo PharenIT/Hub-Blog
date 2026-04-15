@@ -4,38 +4,37 @@
 
 ## Introduction
 
-Imagine your desk piled high with paper, dozens of invoices arriving through different channels, and an accountant bouncing between email, folders and the ERP.  That was our customer’s daily reality before we stepped in.  Together we built an incoming‑invoice tool that replaced the paper chaos: invoices are automatically imported, read in less than two minutes and approved with a single click.
+Picture a finance department where paper piles up, invoices arrive via post, email and PDFs, and an accountant constantly jumps between inboxes, folders and the ERP. That was our customer’s daily reality before we came on board.  
 
-## Customer & key facts
+Together we built an incoming‑invoice tool that eliminates the paper chase. Invoices are automatically imported, read in under two minutes and can be approved with a single click. Behind that simplicity lies a story we share in this case study.
+
+## Customer & Key Facts
 
 | Customer | Platform type | Team | Industry | Users | Location | Market | Project duration |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Mid‑sized company | Incoming‑invoice tool | PM, app‑builder, process design, AI/OCR, QA | Finance/accounting | Accounting, purchasing, management | Germany | pan‑Europe | 4 months |
 
-## Business value
+## Why it matters
 
-Our conversations with the finance team made it clear: manual invoice processing costs nerves and money.  On average, a manual invoice costs \$15–\$40【755249572714523†L56-L63】, and more than half of companies spend ten or more hours per week on the process【755249572714523†L64-L66】.  Automation saves time—companies can process invoices up to 85 % faster【755249572714523†L74-L81】, the number of invoices processed per employee rises by 64 %【755249572714523†L87-L90】, and error rates drop by 90 %【755249572714523†L104-L113】.  Costs per invoice fall to \$2–\$5, about an 83 % reduction【755249572714523†L137-L144】.
+Talking with the finance team made one thing obvious: manual invoice processing drains both patience and budget. A single hand‑processed invoice costs on average \$15–\$40【755249572714523†L56-L63】, and more than half of companies spend ten or more hours each week on this routine【755249572714523†L64-L66】. Automation changes the picture entirely: invoices can be processed up to 85 % faster【755249572714523†L74-L81】, the number processed per employee increases by 64 %【755249572714523†L87-L90】 and error rates drop by 90 %【755249572714523†L104-L113】. Costs per invoice fall to just \$2–\$5【755249572714523†L137-L144】.
 
-- **More time for valuable work:** Where staff previously spent hours typing data, they can now focus on analysis and consulting.
-- **Fewer errors:** Automatic data capture and validation reduce typos and duplicates【755249572714523†L104-L113】.
-- **Cost savings:** Eliminating paper and manual effort cuts the cost per invoice【755249572714523†L137-L144】.
-- **Smooth processes:** Clear workflows prevent delays and late‑payment penalties.
+Those numbers aren’t just statistics – they translate into a better workday. When people aren’t spending hours entering data, they can focus on analysis and advisory work. Automatic capture and validation reduce typos and duplicates【755249572714523†L104-L113】. Dropping paper and manual steps slashes costs【755249572714523†L137-L144】. And clear workflows prevent delays and late‑payment fees.
 
-## User experience
+## User experience
 
-The tool feels like a central inbox: incoming invoices are automatically collected and displayed in a structured way.  Key information—vendor, date, amount—is already filled in.  Users can review the details, add comments and approve or return the invoice with a click.  Warning messages highlight potential issues.  A mobile version lets users check invoices on the go.
+A finance tool should feel like a helper, not an obstacle. Our system works like a central inbox: incoming invoices are collected and presented in a structured way. Key details—vendor, date, amount—are pre‑filled. Users can review, add notes and approve or return the invoice with a click. Warning messages highlight potential issues. A mobile version lets you check invoices on the go.
 
-## Customer benefits
+## Customer benefits
 
 - **Faster approvals:** Invoices are processed and approved in under two minutes.
 - **Error prevention:** Intelligent fields detect duplicates and attempted fraud【755249572714523†L104-L113】.
 - **Transparent history:** Every action is fully documented.
 - **Less paper:** Digital workflows save space and effort.
-- **Easy integration:** Connection to the ERP is seamless, without media breaks.
+- **Easy integration:** Connection to the ERP is seamless and free of media breaks.
 
-## Business impact
+## Business impact
 
-The new platform drastically shortened throughput times: invoices that used to take about 15 minutes are now completed in around two minutes【755249572714523†L92-L95】.  The team can handle 64 % more invoices per employee【755249572714523†L87-L90】, and costs per invoice have fallen by more than 80 %【755249572714523†L137-L144】.  Companies also benefit from early‑payment discounts and avoid dunning fees.  Transparency about outstanding liabilities improves budget planning.
+The new platform dramatically shortens throughput times: invoices that used to take about 15 minutes are now completed in around two minutes【755249572714523†L92-L95】. The team can handle 64 % more invoices per employee【755249572714523†L87-L90】, and costs per invoice are down by more than 80 %【755249572714523†L137-L144】. Companies also enjoy early‑payment discounts and avoid dunning fees. Greater transparency around outstanding liabilities improves budget planning.
 
 ## Project requirements
 
@@ -64,7 +63,7 @@ Together with the users we developed prototypes, tested them and adapted them.  
 
 The application runs in the cloud.  Invoices land in a SharePoint list and are read by an OCR service.  A workflow service assigns the invoice to the correct cost centre and determines the approval route.  The front‑end, built with the Lists App Builder, presents all information and allows approvals with a single click.  When approved, the data is automatically transferred to the ERP.  Dashboards provide an overview of outstanding invoices and cash flow.
 
-## Highlights & design
+## Highlights & Design
 
 - **Central inbox:** All invoices collected in one place.
 - **Intelligent fields:** Automatic detection of invoice data and duplicates【755249572714523†L104-L113】.
@@ -78,4 +77,4 @@ Four months after project start the tool went live.  The processing time per inv
 
 ## Conclusion
 
-By listening to people and understanding their workflows we were able to build a solution that simplified everyday work.  The combination of Pharen Hub, Lists App Builder and intelligent OCR shows how powerful digitalisation can be—for people and for the business.
+We listened to people and understood their workflows – that’s how we built a solution that makes everyday work simpler. The combination of Pharen Hub, Lists App Builder and intelligent OCR shows how powerful digitalisation can be for both people and businesses.

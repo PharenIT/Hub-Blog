@@ -4,7 +4,11 @@
 
 ## Introduction
 
-On the factory floor, every second counts. Each moment determines how many packages can be shipped and whether the right boxes are used. We were asked to build a system that makes choosing the right carton as easy as a gesture: place the package, and in less than half a second the outline is captured, the measurements are calculated and the appropriate label is printed.
+If you’ve ever stood next to a conveyor belt in a noisy plant, you know that time feels different there. Each heartbeat determines how many packages go out the door and whether they’re packed in the right box. Before our project, teams were measuring boxes with tape measures, jotting dimensions on paper and often choosing a carton by guesswork.  
+
+When the production team approached us, their request was simple and ambitious: make selecting the right box as natural as picking up a scanner. Place the package, and in under half a second the outline should be captured, the dimensions calculated and the label printed.  
+
+In this case study, we share how we combined Rust and 3D sensors to create a system that makes that vision a reality.
 
 ## Client & Key Facts
 
@@ -12,48 +16,52 @@ On the factory floor, every second counts. Each moment determines how many packa
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Industrial company | Desktop-/Mobile app | PM, Rust dev, computer vision, UI/UX, QA | Manufacturing | Production staff, logistics teams | Europe | worldwide | 3 months |
 
-## Business Value
+## Why it matters
 
-During our tour of the plant we saw many employees measuring boxes by hand, jotting numbers on scraps of paper and often selecting boxes that were too large. This wastes material, leads to higher shipping costs and takes time. Modern 3D sensors can accurately scan irregularly shaped packages; they capture dimensions such as volume, height, width and length and help to optimise storage and transport space【375008585752810†L1101-L1106】. They also detect defects and misalignments that aren’t visible to traditional 2D cameras【375008585752810†L1108-L1115】.
+On our first tour of the plant we saw staff with tape measures in one hand and notepads in the other, trying to keep up with a river of packages. Oversized boxes were common, wasting material and driving up shipping costs. Yet modern 3D sensors can scan even irregular packages precisely. They capture volume, height, width and length, optimising storage and transport space【375008585752810†L1101-L1106】. They also detect defects and misalignments that traditional 2D cameras miss【375008585752810†L1108-L1115】.
 
-- **Speed:** The process takes less than 0.5 seconds – far quicker than manual measuring.
-- **Quality:** 3D sensors detect dents or tears【375008585752810†L1108-L1115】.
-- **Cost savings:** Accurate measurements reduce packaging material and shipping volume, noticeably lowering costs.
-- **Data transparency:** Every scan is stored and can be used for analysis.
+The key benefits are clear:
 
-## User Experience
+- **Speed:** Each scan takes less than half a second – a world apart from manual measuring.
+- **Quality:** 3D sensors see dents and tears before they become problems【375008585752810†L1108-L1115】.
+- **Savings:** Accurate dimensions reduce packaging material and shipping volume, cutting costs noticeably.
+- **Insight:** Every scan is stored and available for analysis.
 
-The application is designed to work even in industrial environments. Buttons that can be pressed with gloves, clear colours and large type ensure you understand the process at a glance. The system guides users through each step: scan the contour, display the measurements, suggest a box size and print the label. The same software runs on tablets for mobile use, for example at goods receiving.
+## User experience
 
-## Customer Benefits
+Software in a factory has to be both tough and intuitive. That’s why we focused on controls that work with gloves, clear colours and large type so you can understand the process at a glance.  
 
-- **Lightning-fast scanning:** The outline is captured in less than 0.5 seconds.
-- **Error-free measurements:** Automation eliminates incorrect values and makes handwritten notes obsolete.
-- **More packages per shift:** Teams can significantly increase their productivity.
-- **Data for quality control:** Historical scan values help to optimise processes and identify trends.
-- **Easy scaling:** Thanks to the cross‑platform architecture, the app runs on various devices.
+The system guides users step by step: scan the contour, display the measurements, suggest the right box and print the label. The same software runs on tablets for mobile tasks, such as checking goods at the dock.
 
-## Business Impact
+## Customer benefits
 
-The automated solution has revolutionised the packaging process: incorrectly sized shipments have become the exception, shipping costs are falling and returns are decreasing. Employees appreciate the relief and can use their time more effectively. Data is transferred directly to the ERP and is available for controlling.
+- **Lightning‑fast scanning:** Outlines are captured in less than half a second.
+- **Error‑free measurements:** Automation eliminates incorrect values and makes notepads obsolete.
+- **More packages per shift:** Teams can drastically increase throughput.
+- **Data for quality control:** Historical scan values help optimise processes and spot trends.
+- **Easy scaling:** The cross‑platform architecture means the app runs on a variety of devices.
 
-## Project Requirements
+## Business impact
 
-The customer wanted a fast, reliable system that can recognise boxes of different sizes and shapes, automatically select the right class and create labels. The app had to work offline, connect easily to the ERP and be usable both at a stationary workstation and on mobile devices.
+Our solution has reshaped the packaging process. Oversized shipments are now rare, shipping costs are falling and returns are down. Employees appreciate the relief and use their time more effectively. Data flows directly into the ERP and is available for controlling and analysis.
 
-### Project Phases
+## Project requirements
+
+The client needed a system that recognises boxes of different sizes and shapes quickly, automatically suggests the right class and prints labels. The app had to work offline, connect easily to the ERP and be usable both at a workstation and on mobile devices.
+
+### Project phases
 
 #### Discovery (1 week)
 
-We spent a few days in the plant, observing the packaging process and talking to staff. Together we identified bottlenecks and gathered requirements. A 3D scanner seemed ideal because it reliably captures irregular shapes【375008585752810†L1101-L1106】.
+We spent several days on site, watching the packaging process and talking to staff. Together we identified bottlenecks and gathered requirements. A 3D scanner proved ideal because it captures irregular shapes reliably【375008585752810†L1101-L1106】.
 
 #### UI/UX Design (2 weeks)
 
-We then developed wireframes and interactive prototypes. In feedback sessions we tested the concepts directly with users. Adjustments such as larger buttons or colour coding came out of these conversations.
+Next we developed wireframes and interactive prototypes. In feedback sessions we tested these concepts with users. Adjustments like larger buttons and colour coding came directly from those conversations.
 
 #### Development & Integration (5 weeks)
 
-The software was written in Rust. We used **Tauri** and **Crux** for the cross‑platform UI; Tauri produces lightweight, performant apps【477875218039410†L46-L63】, and Crux separates core logic from the UI【932251511387094†L134-L138】【932251511387094†L192-L220】. We also integrated:
+The software was written in Rust. We used **Tauri** and **Crux** for the cross‑platform UI; Tauri produces lightweight, performant apps【477875218039410†L46-L63】 and Crux separates core logic from the UI【932251511387094†L134-L138】【932251511387094†L192-L220】. We also integrated:
 
 - An **OpenCV** binding for image and 3D data processing.
 - **Sensor adapters** to read data from the scanner.
@@ -61,23 +69,23 @@ The software was written in Rust. We used **Tauri** and **Crux** for the cross�
 - **Label printer interface**.
 - **Local storage** for offline operation and later synchronisation.
 
-## Our Solution & Architecture
+## Our solution & architecture
 
-At the heart of our application is a Rust service that receives sensor data, processes it and returns results. The UI layer accesses it via an internal API. Events such as "scan started" or "label printed" are passed through an event dispatcher. When there is no network connection, data is stored locally and synchronised later.
+At the heart of the application is a Rust service that receives sensor data, processes it and returns results. The UI layer accesses it via an internal API. Events such as “scan started” or “label printed” are passed through an event dispatcher. If there is no network connection, data is stored locally and synchronised later.
 
 ## Highlights & Design
 
-- **Sub‑second per scan:** Each process completes in under 0.5 seconds.
-- **Quality control included:** Dents and tears are detected【375008585752810†L1108-L1115】.
-- **Automatic size selection:** The appropriate box size is suggested.
+- **Sub‑second scans:** Each process completes in under half a second.
+- **Quality control built in:** Dents and tears are detected【375008585752810†L1108-L1115】.
+- **Automatic size selection:** The system suggests the right box.
 - **Label creation:** Integrated printing with barcode.
-- **Offline functions:** Save and synchronise later with the ERP.
+- **Offline functions:** Save data and synchronise later with the ERP.
 - **Dashboard:** Analyse throughput times and errors.
 
 ## Outcome
 
-Thanks to the solution, teams work faster and make fewer errors. Packaging material is used more efficiently and shipping costs decrease. Customer reports show fewer damages and faster delivery. The app is now used at several sites, and the investment has paid off quickly.
+Thanks to our solution, teams work faster and make fewer errors. Packaging material is used more efficiently and shipping costs decrease. Customer reports show fewer damages and faster delivery. The app is now used at several sites, and the investment has paid off quickly.
 
 ## Conclusion
 
-Technology alone doesn’t solve problems – understanding people’s day‑to‑day work does. Our project proves that by listening to users and tailoring the solution to their workflows, modern software can achieve a great deal.
+Technology is just a tool. Understanding people’s day‑to‑day work is what makes the difference. Our project proves that when you listen to users and tailor the solution to their workflows, modern software can achieve great things.

@@ -4,7 +4,11 @@
 
 ## Introduction
 
-Insurers are facing rising expectations for fast, transparent claims handling. Manual, paper‑based processes tie up resources, cause errors and frustrate customers. In this case study we share how, together with the insurer’s team, we built a modern claims platform: new claims are captured in less than eight seconds, an AI checks the submitted documents within a minute, and everyone involved can track progress live.
+Imagine filing a claim after a burst pipe and waiting days for a reply. For many policyholders, that delay is still normal. Claims handlers juggle paper, email and legacy systems while customers sit on hold. Modern technology exists, yet the experience often feels anything but modern.  
+
+When we sat down with an insurer’s team, we heard a common theme: frustration. Too much manual entry, too many disconnected tools, too little visibility for the people who need answers. We realised this wasn’t just a technical problem – it was a human one.  
+
+This case study tells the story of how we reimagined the claims journey. We show how new claims are now captured in less than eight seconds, how an AI reviews documents within a minute and how everyone involved finally gets a clear, real‑time view of their case.
 
 ## Client & Key Facts
 
@@ -12,64 +16,78 @@ Insurers are facing rising expectations for fast, transparent claims handling. M
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Insurance provider | Claims processing | PM, Backend, Frontend, AI, QA | Insurance | Claims managers, case handlers, policyholders | Germany | national | 4 months |
 
-## Business Value
+## Why it matters
 
-When we spoke to claims handlers, they repeated the same frustration: too much time is spent on routine tasks. A sector study confirms this: around 30 % of working time is spent on low‑value tasks such as document reviews【927659360655962†L117-L120】. At the same time, 31 % of customers complain about poor claims service; 60 % blame long processing times【927659360655962†L123-L128】. Our system automates the creation and review of claims and reduces settlement times from weeks to just a few hours【927659360655962†L124-L128】.
+Our conversations with claims handlers were eye‑opening. The same frustrations cropped up again and again: repetitive data entry, hours spent verifying documents and no time left for the human side of the job. Independent research backs this up: around 30 % of working time in insurance goes on low‑value tasks like document review【927659360655962†L117-L120】. No wonder a third of customers describe claims service as poor and blame long processing times【927659360655962†L123-L128】.
 
-- **Efficiency gains:** Tasks that used to take days are now completed in hours. Automated workflows take over tedious routines so more time is left for customers.
-- **Improved accuracy:** AI algorithms detect patterns and reduce human errors. Traditional automation can handle only about 7 % of cases without human intervention【927659360655962†L146-L155】; our combination of AI and human feedback leads to higher straight‑through processing.
-- **Scalability:** The modular design makes it easy to add new insurance products without changing the architecture.
-- **Sustainability:** Paper consumption decreases and data is available anytime.
+These findings became our motivation. We wanted to build a system that accelerates work and frees people to focus on what matters. By automating claim creation and document checks we cut settlement times from weeks down to hours【927659360655962†L124-L128】.
 
-## User Experience
+Highlights include:
 
-We wanted the solution to feel easy for everyone. Policyholders submit claims through a guided form and immediately see which information is missing. Claims handlers get a clean workspace with priority lists. Push notifications inform them when the status changes. The result is a stress‑free process that creates transparency.
+- **More meaningful work:** Tasks that once took days now finish in hours. The system handles the routine so people can support customers.
+- **Fewer mistakes, more trust:** Our AI spots patterns and reduces human error. While classic automation only straight‑through processes about 7 % of claims【927659360655962†L146-L155】, combining algorithms with human feedback dramatically increases that rate.
+- **Room to grow:** A modular architecture means new insurance products can be added without tearing everything apart.
+- **Paperless and transparent:** Less paper and immediate access to data create clarity for teams and policyholders alike.
 
-## Customer Benefits
+## User experience
 
-- **Shorter settlement times:** Processing times fall from days to hours【927659360655962†L124-L128】.
-- **Transparency:** Customers and staff can view the claim’s progress at any time.
-- **Fewer errors:** Automated data capture noticeably reduces error rates【927659360655962†L146-L155】.
-- **Greater satisfaction:** Faster decisions mean happier customers and fewer follow‑up questions.
+Software only works when people enjoy using it. Our guiding principle was to make the journey smooth for everyone involved.  
 
-## Business Impact
+Policyholders report claims through a guided form that shows what’s missing in real time. They don’t have to navigate jargon or guess what to upload.  
 
-With the new platform, the team can handle twice as many cases without growing. Routine work is automated, data quality improves and compliance evidence is available at the push of a button. Costs per case fall while customer loyalty increases.
+Claims handlers see a clear, prioritised queue. A tidy workspace helps them focus, and intelligent notifications let them know when something needs their attention.  
 
-## Project Requirements
+In short, the process feels fast and transparent instead of slow and opaque.
 
-The insurer wanted to digitalise the entire claims process without replacing its core system. The approach had to be flexible and extensible, comply with GDPR and integrate with existing systems.
+## Customer benefits
 
-### Project Phases
+- **Faster resolutions:** Processing times drop from days to hours【927659360655962†L124-L128】.
+- **Greater visibility:** Everyone involved can see the status of a claim whenever they want.
+- **Reduced errors:** Automated data capture significantly cuts mistakes【927659360655962†L146-L155】.
+- **Higher satisfaction:** Speed and clarity translate into happier customers and fewer follow‑ups.
+
+## Business impact
+
+The benefits go far beyond the individual claim. With the new platform, the team processes twice as many cases without expanding. Routine work disappears, data quality rises and compliance evidence is always at hand.  
+
+Costs per case drop and customer loyalty grows. The insurer becomes more efficient, more trusted and more competitive.
+
+## Project requirements
+
+The insurer wanted to modernise claims handling without ripping out its core system. The solution had to be flexible, extendable, GDPR‑compliant and integrate neatly with existing tools.
+
+### Project phases
 
 #### Discovery (2 weeks)
 
-In workshops with claims teams and IT we analysed the status quo. It quickly became clear that only 7 % of claims were fully automated【927659360655962†L146-L155】. Many data points were unstructured and had to be entered manually. We documented the problems and drafted initial solutions.
+We spent two weeks in workshops with claims teams and IT, mapping out the current state. We quickly discovered that only seven per cent of claims were fully automated【927659360655962†L146-L155】. Much of the data was unstructured and needed manual entry. By capturing pain points and sketching early ideas, we laid the groundwork for change.
 
 #### UI/UX Design (4 weeks)
 
-Our designers created prototypes, tested them with users and refined them iteratively. A design system with clear components, responsive layouts and accessible forms emerged. We developed more than 40 custom icons to make complex processes easy to understand.
+Our designers created interactive prototypes, tested them with users and iterated quickly. A design system emerged with clear components, responsive layouts and accessible forms. We developed over forty custom icons to make complex workflows easy to grasp.
 
 #### Development & Integration (6 weeks)
 
-The backend was built with Django and FastAPI, providing clean APIs and easy AI integration【282307985541576†L324-L341】. The frontend was built with Nuxt, which offers file‑based routing and server‑side rendering【321147738204318†L15-L19】【321147738204318†L140-L150】. We used microservices, an AI layer for document analysis and a PostgreSQL database for transaction data【42843466638634†L37-L50】. Interfaces to external partners and extensive testing completed the development cycle.
+The backend uses Django and FastAPI to provide clean APIs and simple AI integration【282307985541576†L324-L341】. The frontend is built with Nuxt, offering file‑based routing and server‑side rendering【321147738204318†L15-L19】【321147738204318†L140-L150】. Microservices, an AI layer for document analysis and a PostgreSQL database store transaction data【42843466638634†L37-L50】. We connected external partners and ran thorough tests to ensure a seamless rollout.
 
-## Our Solution & Architecture
+## Our solution & architecture
 
-The finished platform is based on a gateway that links the frontend, backend and AI. Claims are normalised, read by the AI and evaluated by a decision service. All steps are logged and visible on the dashboard. Thanks to modular services, new products or functions can be added quickly.
+The result is a platform that ties everything together. A central gateway connects the frontend, backend and AI. Claims are structured, processed by the AI and then evaluated by a decision service. Every step is logged and visible in the dashboard.  
+
+Because of the modular design, new products or functions can be added quickly without disturbing the rest.
 
 ## Highlights & Design
 
-- **Prioritised work list:** Claims handlers immediately see which cases are urgent.
-- **Live status:** All users can track progress in real time.
-- **Notifications:** Automatic emails and push messages keep everyone informed.
-- **Extensibility:** New processes can be activated via configuration.
+- **Focus on what matters:** A prioritised work list shows handlers which cases need attention first.
+- **Real‑time transparency:** Everyone involved can track progress live.
+- **Stay informed:** Automated emails and push notifications keep users updated.
+- **Easily extended:** New processes can be activated by configuration.
 - **Audit & compliance:** Dashboards provide evidence for internal and external audits.
 
 ## Outcome
 
-Within four months we digitised the claims process completely. Manual work dropped by about 30 %【927659360655962†L117-L120】; average processing time fell from several days to a few hours【927659360655962†L124-L128】. The team is more motivated and customers praise the speed and transparency. The platform lays the foundation for innovations like chatbots or self‑service portals.
+In just four months we transformed the claims process. Manual work fell by about 30 %【927659360655962†L117-L120】, and average processing time dropped from several days to a few hours【927659360655962†L124-L128】. Teams are more motivated and customers praise the speed and clarity. The platform sets the stage for future innovations like chatbots or self‑service portals.
 
 ## Conclusion
 
-It is not just about technology but about people: by listening and understanding the real problems of staff and customers, we were able to develop a solution that makes a difference. Combining modern design, powerful technology and AI delivers satisfied customers and relieved teams.
+Technology alone doesn’t solve problems; empathy does. By listening to staff and customers and understanding their real challenges, we built a system that truly helps. Our blend of modern design, robust technology and AI reduces complexity and builds trust. Teams feel supported, customers feel heard – and the organisation is ready for what’s next.
